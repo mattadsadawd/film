@@ -53,7 +53,7 @@ export class App implements OnDestroy {
       this._onScroll();
     }
   }
-
+  
   ngOnDestroy(): void {
     if (typeof window !== 'undefined') {
       window.removeEventListener('scroll', this._onScroll as EventListener);
